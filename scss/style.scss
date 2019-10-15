@@ -1,0 +1,553 @@
+@import "componentes/variables";
+@import "componentes/navbar";
+@import "componentes/divisor";
+@import "componentes/cta";
+@import "componentes/readMore";
+@import "componentes/whatsappIcon";
+@import "componentes/menu";
+@import "componentes/up";
+
+// HOME STYLE
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Sections Page */
+
+// Welcome
+
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background: url("../jpg/bg-inicio(ejemplo).jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: -52px;
+}
+.home-content{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.heading-section{
+    font-size: $fsHeading;
+    font-family: $ffHeading;
+    font-weight: 200;
+}
+.title-section{
+    font-size: $fsTitle;
+    font-family: $ffHeading;
+    font-weight: 200;
+}
+.text{
+    font-family: $ffText;
+    font-size: $fsText;
+    line-height: 24px;
+}
+
+// About Me
+
+.about-me{
+    margin: 128px 0;
+}
+.about-me-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.description{
+    padding: 24px 150px 24px 24px;
+    background: $grayScale-500;
+    grid-column: 1/6;
+    grid-row: 2/7;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+.image{
+    grid-column: 5/10;
+    grid-row: 1/6;
+}
+
+// Services
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    grid-auto-rows: 205px;
+}
+.service{
+    position: relative;
+}
+.cover-service{
+    color: white;
+    font-size: 24px;
+    font-family: $ffHeading;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    transition-duration: 0.3s;
+}
+.service-1{
+    background: url("../jpg/corte.jpg");
+    background-size: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.description-services{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+.service-2{
+    background: url("../jpg/color-2.jpeg");
+    background-size: 110%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.service-3{
+    background: url("../jpg/brushing.jpg");
+    background-size: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.service-4{
+    background: url("../jpg/balayage.jpg");
+    background-size: 100%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.service-5{
+    background: url("../jpg/peinados.jpeg");
+    background-size: 140%;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.service-6{
+    background: url("../jpg/claritos.jpg");
+    background-size: 275%;
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+// Eventos
+
+.events{
+    margin-top: 128px;
+    height: 100vh;
+    width: 100%;
+    background: url("../png/bg-eventos.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.events-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+.events-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    text-align: right;
+}
+
+// Testimonials
+
+.testimonials{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.testimonials-container{
+    margin: 128px 0;
+}
+.description-testimonials{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+// Slide Styles
+
+.img-slide{
+    height:250px;
+    opacity: 0;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-align: right;
+}
+.text-testimonial{
+    color: #f2f2f2;
+}
+.icon-left-arrow{
+    color: black;
+    font-size: 32px;
+}
+
+.icon-right-arrow{
+    color: black;
+    font-size: 32px;
+}
+
+// Map
+
+.map{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+// Contact
+
+.contact{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contact-container{
+    margin: 128px 0;
+}
+.form-control{
+    border-radius: 0;
+    border-right: none;
+    border-top: none;
+    border-left: 1px solid $grayScale-700;
+    border-bottom: 1px solid $grayScale-700;
+    font-family: $ffText;
+}
+.text-contact{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    text-align: right;
+}
+.data-contact{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 35px;
+        height: 35px;
+        margin-left: 16px;
+    }
+}
+
+// Footer
+
+footer{
+    background: $grayScale-800;
+    color: white;
+    padding: 12px 0;
+    .footer-content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        p{
+            display: inline;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        } 
+    }
+    
+}
+
+/* ---------------------------  MEDIA QUERYS ------------------------------------  */
+
+// SMALL SCREENS
+
+@media screen and (max-width: 1200px){
+    
+    //SERVICES
+    
+    .services{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+    }
+    .service-1{
+        background: url("../jpg/corte.jpg");
+        background-size: 140%;
+        background-attachment: cover;
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    .description-services{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .service-2{
+        background: url("../jpg/color-2.jpeg");
+        background-size: 100%;
+        background-position: center;
+        background-attachment: cover;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .service-3{
+        background: url("../jpg/brushing.jpg");
+        background-size: 100%;
+        background-attachment: cover;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .service-4{
+        background: url("../jpg/balayage.jpg");
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: 0 -100px;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .service-5{
+        background: url("../jpg/peinados.jpeg");
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .service-6{
+        background: url("../jpg/claritos.jpg");
+        background-attachment: cover;
+        background-position: center;
+        grid-column: 2/3;
+        grid-row:5/6;
+    }
+    
+    // EVENTS
+    
+    .cta{
+        margin-bottom: 16px;
+    }
+    
+}
+
+// TABLET
+
+@media screen and (max-width: 991px){
+    
+    
+    
+    // MENU
+    
+    .item-menu{
+        text-align: center;
+    }
+    
+    // About Me
+
+    .description{
+        padding: 24px;
+        grid-column: 1/9;
+        grid-row: 1/4;
+    }
+    .image{
+        grid-column: 2/10;
+        grid-row: 3/6;
+    }
+    
+    //SERVICES
+    
+    .service-1{
+        background-size: 210%;
+        background-position: center;
+    }
+    
+}
+
+// BIG MOBILE
+
+@media screen and (max-width: 767px){
+    
+    // ABOUT ME
+    
+    .about-me{
+    margin: 128px 0;
+    }
+    .about-me-content{
+        display: block;
+    }
+    .description{
+        padding: 24px 24px 24px 24px;
+        background: white;
+    }
+    
+    //SERVICES
+    
+    .service-1{
+        background-size: 282%;
+        background-position: center;
+    }
+    .service-4{
+        background: url("../jpg/balayage.jpg");
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: auto;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+    // FOOTER
+    
+    footer{
+        .footer-content{
+            text-align: center;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+    }
+}
+
+// MOBILE
+
+@media screen and (max-width: 575px){
+    
+    //GENERAL STYLES
+    
+    .heading-section{
+        font-size: 32px;
+    }
+    .read-more{
+        padding: 10px 15px;
+    }
+    
+    // NAVBAR
+    
+    .navbar-brand{
+        font-size: 18px;
+    }
+    
+    //DESCRIPTION
+    
+    .description{
+        padding: 0;
+    }
+    
+    //SERVICE
+    
+    .services{
+        display: block;
+        position: static;
+    }
+    .service{
+        margin-bottom: 32px;
+    }
+    .cover-service{
+        position: static;
+        height: 309px;
+        background: rgba(0,0,0,0.7);
+        color: white;
+    }
+    .service-1{
+        background: url("../jpg/corte.jpg");
+        background-size: 140%;
+        background-attachment: cover;
+    }
+    .service-2{
+        background: url("../jpg/color-2.jpeg");
+        background-size: 100%;
+        background-attachment: cover;
+    }
+    .service-3{
+        background: url("../jpg/brushing.jpg");
+        background-size: 100%;
+        background-attachment: cover;
+    }
+    .service-4{
+        background: url("../jpg/balayage.jpg");
+        background-size: 190%;
+        background-attachment: cover;
+    }
+    .service-5{
+        background: url("../jpg/peinados.jpeg");
+        background-size: 100%;
+        background-attachment: cover;
+    }
+    .service-6{
+        background: url("../jpg/claritos.jpg");
+        background-size: 140%;
+        background-attachment: cover;
+    }
+    
+    
+    // EVENTS
+    
+    .events{
+        background: url("../png/bg-eventos-mobile.png");
+        background-size: 320%;
+    }
+    
+    // TESTIMONIAL
+    
+    .img-slide{
+        height: 400px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

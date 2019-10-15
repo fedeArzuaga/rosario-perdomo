@@ -1,0 +1,22 @@
+.up-button{
+    width: 40px;
+    height: 40px;
+    background: $red;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    .icon-up{
+        color: white;
+        font-size: 24px;
+    }
+}
+.up-button:hover{
+    opacity: 1;
+}

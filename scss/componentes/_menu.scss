@@ -1,0 +1,46 @@
+.menuSite{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left;
+}
+.hideMenuSite{
+    left: -100%;
+}
+.content-menu{
+    width: 100%;
+    position: relative;
+    z-index: 360;
+    a{
+        text-decoration: none;
+    }
+}
+.item-menu{
+    position: relative;
+    z-index: 3999;
+    text-align: right;
+    font-size: 18px;
+    font-family:  $ffText;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pDescription{
+    color: white;
+    position: relative;
+    z-index: 390;
+    width: 100%;
+}
+.content-items-menu{
+    width: 100%;
+    position: relative;
+    z-index: 370;
+}

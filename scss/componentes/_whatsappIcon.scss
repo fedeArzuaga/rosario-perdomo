@@ -1,0 +1,29 @@
+.anchor-whatsapp{
+    &:hover{
+        text-decoration: none;
+    }
+    .whatsapp-icon{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    background: #00E676;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-family: $ffText;
+    padding: 10px 15px;
+    border: none;
+    transition-duration: 0.3s;
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 35px;
+            height: 35px;
+            margin-right: 8px;
+        }
+        &:hover{
+            background: #1EBEA5;
+        }
+    }
+}

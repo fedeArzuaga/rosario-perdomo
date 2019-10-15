@@ -1,0 +1,10 @@
+.read-more{
+    display: inline-block;
+    color: $grayScale-800;
+    box-shadow: inset 0 0 0 2px $red;
+    color: $red;
+    margin-left: 24px;
+    font-size: 18px;
+    font-family: $ffText;
+    padding: 10px 35px;
+}

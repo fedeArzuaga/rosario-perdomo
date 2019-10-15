@@ -1,0 +1,555 @@
+/* Color Guide */
+/* Fonts Guide */
+.logo-text {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0; }
+
+.icon-menu {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 350; }
+  .icon-menu .var-menu {
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    transition-property: transform,opacity; }
+  .icon-menu .var-top {
+    top: 4px; }
+  .icon-menu .var-middle {
+    top: 14px; }
+  .icon-menu .var-bottom {
+    bottom: 4px; }
+
+.var-top-x {
+  top: 4px;
+  transform: rotate(42deg);
+  transform-origin: left; }
+
+.var-middle-x {
+  opacity: 0; }
+
+.var-bottom-x {
+  bottom: 4px;
+  transform: rotate(-42deg);
+  transform-origin: left; }
+
+.divisor {
+  width: 100px;
+  border: 1px solid #BF3B3B;
+  margin: 0 0 24px 0; }
+
+.cta {
+  display: inline-block;
+  background: #BF3B3B;
+  color: white;
+  font-size: 18px;
+  font-family: Montserrat;
+  padding: 10px 35px;
+  border: none; }
+
+.read-more {
+  display: inline-block;
+  color: #262626;
+  box-shadow: inset 0 0 0 2px #BF3B3B;
+  color: #BF3B3B;
+  margin-left: 24px;
+  font-size: 18px;
+  font-family: Montserrat;
+  padding: 10px 35px; }
+
+.anchor-whatsapp:hover {
+  text-decoration: none; }
+.anchor-whatsapp .whatsapp-icon {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  background: #00E676;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-family: Montserrat;
+  padding: 10px 15px;
+  border: none;
+  transition-duration: 0.3s; }
+  .anchor-whatsapp .whatsapp-icon p {
+    margin: 0;
+    padding: 0; }
+  .anchor-whatsapp .whatsapp-icon img {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px; }
+  .anchor-whatsapp .whatsapp-icon:hover {
+    background: #1EBEA5; }
+
+.menuSite {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: left; }
+
+.hideMenuSite {
+  left: -100%; }
+
+.content-menu {
+  width: 100%;
+  position: relative;
+  z-index: 360; }
+  .content-menu a {
+    text-decoration: none; }
+
+.item-menu {
+  position: relative;
+  z-index: 3999;
+  text-align: right;
+  font-size: 18px;
+  font-family: Montserrat;
+  cursor: pointer;
+  width: 100%; }
+
+.pDescription {
+  color: white;
+  position: relative;
+  z-index: 390;
+  width: 100%; }
+
+.content-items-menu {
+  width: 100%;
+  position: relative;
+  z-index: 370; }
+
+.up-button {
+  width: 40px;
+  height: 40px;
+  background: #BF3B3B;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  opacity: 0.6;
+  transition-duration: 0.3s; }
+  .up-button .icon-up {
+    color: white;
+    font-size: 24px; }
+
+.up-button:hover {
+  opacity: 1; }
+
+html {
+  scroll-behavior: smooth; }
+
+/* Sections Page */
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background: url("../jpg/bg-inicio(ejemplo).jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -52px; }
+
+.home-content {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+
+.heading-section {
+  font-size: 48px;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 200; }
+
+.title-section {
+  font-size: 32px;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 200; }
+
+.text {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px; }
+
+.about-me {
+  margin: 128px 0; }
+
+.about-me-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.description {
+  padding: 24px 150px 24px 24px;
+  background: #F2F2F2;
+  grid-column: 1/6;
+  grid-row: 2/7;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start; }
+
+.image {
+  grid-column: 5/10;
+  grid-row: 1/6; }
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr;
+  grid-gap: 32px;
+  grid-auto-rows: 205px; }
+
+.service {
+  position: relative; }
+
+.cover-service {
+  color: white;
+  font-size: 24px;
+  font-family: "Julius Sans One", sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition-duration: 0.3s; }
+
+.service-1 {
+  background: url("../jpg/corte.jpg");
+  background-size: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2; }
+
+.description-services {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start; }
+
+.service-2 {
+  background: url("../jpg/color-2.jpeg");
+  background-size: 110%;
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+.service-3 {
+  background: url("../jpg/brushing.jpg");
+  background-size: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3; }
+
+.service-4 {
+  background: url("../jpg/balayage.jpg");
+  background-size: 100%;
+  grid-column: 1/3;
+  grid-row: 3/4; }
+
+.service-5 {
+  background: url("../jpg/peinados.jpeg");
+  background-size: 140%;
+  grid-column: 3/4;
+  grid-row: 2/4; }
+
+.service-6 {
+  background: url("../jpg/claritos.jpg");
+  background-size: 275%;
+  background-position: center;
+  grid-column: 4/5;
+  grid-row: 2/4; }
+
+.events {
+  margin-top: 128px;
+  height: 100vh;
+  width: 100%;
+  background: url("../png/bg-eventos.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+
+.events-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end; }
+
+.events-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  text-align: right; }
+
+.testimonials {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+.testimonials-container {
+  margin: 128px 0; }
+
+.description-testimonials {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start; }
+
+.img-slide {
+  height: 250px;
+  opacity: 0; }
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  text-align: right; }
+
+.text-testimonial {
+  color: #f2f2f2; }
+
+.icon-left-arrow {
+  color: black;
+  font-size: 32px; }
+
+.icon-right-arrow {
+  color: black;
+  font-size: 32px; }
+
+.map {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0; }
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+.contact-container {
+  margin: 128px 0; }
+
+.form-control {
+  border-radius: 0;
+  border-right: none;
+  border-top: none;
+  border-left: 1px solid #737373;
+  border-bottom: 1px solid #737373;
+  font-family: Montserrat; }
+
+.text-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  text-align: right; }
+
+.data-contact {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+  .data-contact p {
+    margin: 0;
+    padding: 0; }
+  .data-contact img {
+    width: 35px;
+    height: 35px;
+    margin-left: 16px; }
+
+footer {
+  background: #262626;
+  color: white;
+  padding: 12px 0; }
+  footer .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    footer .footer-content p {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      font-size: 12px; }
+
+/* ---------------------------  MEDIA QUERYS ------------------------------------  */
+@media screen and (max-width: 1200px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px; }
+
+  .service-1 {
+    background: url("../jpg/corte.jpg");
+    background-size: 140%;
+    background-attachment: cover;
+    grid-column: 1/2;
+    grid-row: 2/4; }
+
+  .description-services {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+
+  .service-2 {
+    background: url("../jpg/color-2.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-attachment: cover;
+    grid-column: 2/3;
+    grid-row: 2/3; }
+
+  .service-3 {
+    background: url("../jpg/brushing.jpg");
+    background-size: 100%;
+    background-attachment: cover;
+    grid-column: 2/3;
+    grid-row: 3/4; }
+
+  .service-4 {
+    background: url("../jpg/balayage.jpg");
+    background-size: 100%;
+    background-attachment: cover;
+    background-position: 0 -100px;
+    grid-column: 1/3;
+    grid-row: 4/5; }
+
+  .service-5 {
+    background: url("../jpg/peinados.jpeg");
+    background-size: 100%;
+    background-attachment: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 5/6; }
+
+  .service-6 {
+    background: url("../jpg/claritos.jpg");
+    background-attachment: cover;
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 5/6; }
+
+  .cta {
+    margin-bottom: 16px; } }
+@media screen and (max-width: 991px) {
+  .item-menu {
+    text-align: center; }
+
+  .description {
+    padding: 24px;
+    grid-column: 1/9;
+    grid-row: 1/4; }
+
+  .image {
+    grid-column: 2/10;
+    grid-row: 3/6; }
+
+  .service-1 {
+    background-size: 210%;
+    background-position: center; } }
+@media screen and (max-width: 767px) {
+  .about-me {
+    margin: 128px 0; }
+
+  .about-me-content {
+    display: block; }
+
+  .description {
+    padding: 24px 24px 24px 24px;
+    background: white; }
+
+  .service-1 {
+    background-size: 282%;
+    background-position: center; }
+
+  .service-4 {
+    background: url("../jpg/balayage.jpg");
+    background-size: 100%;
+    background-attachment: cover;
+    background-position: auto;
+    grid-column: 1/3;
+    grid-row: 4/5; }
+
+  footer .footer-content {
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: center; } }
+@media screen and (max-width: 575px) {
+  .heading-section {
+    font-size: 32px; }
+
+  .read-more {
+    padding: 10px 15px; }
+
+  .navbar-brand {
+    font-size: 18px; }
+
+  .description {
+    padding: 0; }
+
+  .services {
+    display: block;
+    position: static; }
+
+  .service {
+    margin-bottom: 32px; }
+
+  .cover-service {
+    position: static;
+    height: 309px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white; }
+
+  .service-1 {
+    background: url("../jpg/corte.jpg");
+    background-size: 140%;
+    background-attachment: cover; }
+
+  .service-2 {
+    background: url("../jpg/color-2.jpeg");
+    background-size: 100%;
+    background-attachment: cover; }
+
+  .service-3 {
+    background: url("../jpg/brushing.jpg");
+    background-size: 100%;
+    background-attachment: cover; }
+
+  .service-4 {
+    background: url("../jpg/balayage.jpg");
+    background-size: 190%;
+    background-attachment: cover; }
+
+  .service-5 {
+    background: url("../jpg/peinados.jpeg");
+    background-size: 100%;
+    background-attachment: cover; }
+
+  .service-6 {
+    background: url("../jpg/claritos.jpg");
+    background-size: 140%;
+    background-attachment: cover; }
+
+  .events {
+    background: url("../png/bg-eventos-mobile.png");
+    background-size: 320%; }
+
+  .img-slide {
+    height: 400px; } }
+
+/*# sourceMappingURL=style.css.map */
